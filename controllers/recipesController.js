@@ -77,6 +77,7 @@ exports.createRecipe=(req, res, next) => {
           }
         );
       };
+      
       exports.getAllRecipes=(req,res,next)=>{
         Recipe.find().then(
             (recipes) => {
